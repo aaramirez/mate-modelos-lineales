@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modelos lineales</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La regresión vista como una proyección: mínimos cuadrados, el teorema de Gauss-Markov, el teorema de Cochran, la hipótesis lineal general, comparaciones múltiples, diagnóstico, selección de variables, regresión logística y modelos lineales generalizados, efectos aleatorios y el modelo lineal multivariante.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Modelos <b>lineales</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Una regresión es una sombra: la proyección de los datos sobre un plano</h1>
+  <p class="lede">¿Cuánto sube el precio de una vivienda por cada metro cuadrado, si se compara con otra del mismo barrio y la misma edad? El modelo lineal responde con una idea geométrica: proyectar el vector de los datos sobre el espacio que generan las variables. De esa proyección salen las estimaciones, las pruebas F, los diagnósticos y, con una función de enlace, la regresión logística. Este curso desarrolla la teoría con las demostraciones completas y laboratorios donde los vectores, los residuos y las elipses de confianza se mueven.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de estadística, matemática, actuaría y economía, y para quien ajusta regresiones y quiere entender qué hay debajo. Conviene haber leído Inferencia estadística (máxima verosimilitud, intervalos, la razón de verosimilitudes) y Álgebra lineal avanzada (producto interno, proyecciones ortogonales, valores propios, formas cuadráticas y la pseudoinversa). La normal multivariante y las distribuciones χ², t y F están en Probabilidad.</p>
+    <p><b>Cómo está hecho.</b> Un mismo conjunto de datos recorre el curso: el precio de unas mil viviendas de una ciudad, con su área, habitaciones, edad, barrio y si se vendieron o no en tres meses. Cada capítulo agrega una variable o rompe un supuesto, y lo resuelve con un teorema. Los laboratorios muestran en tres dimensiones el vector de respuestas, el plano de las variables y su proyección, y las prácticas lo comprueban en Python (NumPy, `statsmodels`) o en R (`lm`, `glm`). El curso es la base de Diseño de experimentos, Análisis multivariante, Estadística bayesiana y Econometría.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> La geometría de los mínimos cuadrados</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="regresion-simple"><span class="n">01</span><b>El modelo de regresión lineal simple</b><p>La recta de mínimos cuadrados, su relación con la correlación y la inferencia sobre sus coeficientes.</p></div>
+    <div class="mod soon" data-id="modelo-lineal-como-proyeccion"><span class="n">02</span><b>El modelo lineal general como proyección ortogonal</b><p>Con muchas variables, ajustar es proyectar el vector de respuestas sobre el espacio columna de la matriz de diseño.</p></div>
+    <div class="mod soon" data-id="normal-en-rn-y-cochran"><span class="n">03</span><b>La distribución normal en Rⁿ y el teorema de Cochran</b><p>Proyectar un vector normal isótropo da partes independientes con distribuciones χ²: el origen de toda prueba F.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Inferencia en el modelo lineal</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="gauss-markov"><span class="n">04</span><b>Los supuestos de Gauss-Markov y de Laplace-Gauss</b><p>Sin suponer normalidad, mínimos cuadrados es el mejor estimador lineal insesgado; con normalidad, todo tiene distribución exacta.</p></div>
+    <div class="mod soon" data-id="hipotesis-lineal-general"><span class="n">05</span><b>La hipótesis lineal general y el análisis de la varianza</b><p>Toda pregunta lineal sobre los coeficientes se contrasta comparando el modelo completo con el reducido.</p></div>
+    <div class="mod soon" data-id="comparaciones-multiples"><span class="n">06</span><b>Contrastes y comparaciones múltiples</b><p>Cuando se hacen muchas pruebas a la vez, el error de tipo I se acumula: Bonferroni, Tukey y Scheffé lo controlan.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Cuando los supuestos fallan</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="diagnostico"><span class="n">07</span><b>Diagnóstico: residuos, puntos atípicos e influyentes</b><p>Leer los residuos para encontrar lo que el modelo no explica y los datos que lo dominan.</p></div>
+    <div class="mod soon" data-id="heterocedasticidad-y-autocorrelacion"><span class="n">08</span><b>Heterocedasticidad, autocorrelación y mínimos cuadrados generalizados</b><p>Cuando la varianza del error cambia o los errores se correlacionan, se pondera o se transforma.</p></div>
+    <div class="mod soon" data-id="multicolinealidad-y-seleccion"><span class="n">09</span><b>Multicolinealidad y la búsqueda de la mejor ecuación</b><p>Variables que dicen lo mismo inflan las varianzas, y elegir qué variables entran es otro problema de inferencia.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Más allá del modelo clásico</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="variables-cualitativas"><span class="n">10</span><b>Regresión con variables explicativas cualitativas</b><p>Barrios y categorías como variables indicadoras, interacciones y la prueba de Chow.</p></div>
+    <div class="mod soon" data-id="regresion-logistica-y-glm"><span class="n">11</span><b>Regresión logística y modelos lineales generalizados</b><p>Cuando la respuesta es sí o no, o un conteo, el modelo lineal se aplica a una transformación de la media.</p></div>
+    <div class="mod soon" data-id="efectos-aleatorios"><span class="n">12</span><b>Modelos de efectos aleatorios y componentes de la varianza</b><p>Cuando los grupos son una muestra de muchos posibles, su efecto es una variable aleatoria con su propia varianza.</p></div>
+    <div class="mod soon" data-id="superficies-de-regresion"><span class="n">13</span><b>Estimación paramétrica de superficies de regresión</b><p>Polinomios en dos variables para ajustar superficies curvas en R³, sin salir del modelo lineal.</p></div>
+    <div class="mod soon" data-id="modelo-lineal-multivariante"><span class="n">14</span><b>El modelo lineal multivariante</b><p>Varias respuestas a la vez: la distribución de Wishart, la T² de Hotelling y las pruebas MANOVA.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-modelos-lineales" target="_blank" rel="noopener">github.com/aaramirez/mate-modelos-lineales</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
